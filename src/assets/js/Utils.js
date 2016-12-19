@@ -1,9 +1,9 @@
 export default {
-  post(url, param, successCallback, errorCallback, _self, isShowIndicator) {
+  post(self, url, param, successCallback, errorCallback, isShowIndicator) {
     let that = this;
     let startTime = new Date();
 
-    _self.$http.post(url, param).then(function (response) {
+    self.$http.post(url, param).then(function (response) {
       console.group(url);
       console.debug("%c参数", "font-weight:bold;color:black;");
       console.debug(JSON.stringify(param));

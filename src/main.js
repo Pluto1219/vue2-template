@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import VueResource from 'vue-resource'
 import App from './App'
 import Utils from './assets/js/Utils'
 
@@ -6,6 +7,8 @@ import * as filters from './filter/index'
 import * as directives from './directive/index'
 
 Vue.config.debug = true;
+
+Vue.use(VueResource);
 
 Object.keys(filters).forEach(key => {
   Vue.filter(key, filters[key]);
