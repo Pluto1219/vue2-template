@@ -10,6 +10,8 @@ Vue.config.debug = true;
 
 Vue.use(VueResource);
 
+Vue.prototype.Util = Utils;
+
 Object.keys(filters).forEach(key => {
   Vue.filter(key, filters[key]);
 });
@@ -17,8 +19,6 @@ Object.keys(filters).forEach(key => {
 Object.keys(directives).forEach(key => {
   Vue.directive(key, directives[key]);
 });
-
-Vue.prototype.Util = Utils;
 
 const app = new Vue({
 	render: h => h(App)
