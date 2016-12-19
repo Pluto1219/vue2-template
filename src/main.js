@@ -27,6 +27,11 @@ const router = new VueRouter({
   routes
 });
 
+router.beforeEach((route, redirect, next) => {
+  document.title = route.meta.title || document.title;
+  next();
+});
+
 const app = new Vue({
   router,
 	render: h => h(App)

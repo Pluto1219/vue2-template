@@ -21,7 +21,10 @@ const route = registerRoute(NavConfig);
 
 route.route.push({
   path: '/',
-  component: require('../pages/test1.vue')
+  component: require('../pages/test1.vue'),
+  meta: {
+    title: 'test1'
+  }
 });
 
 export const navs = route.navs;
