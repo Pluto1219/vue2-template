@@ -1,0 +1,28 @@
+[
+  {
+    "title": "",
+    "list": [
+      {
+        "title": "",
+        "name": "test1",
+        "path": "/test1",
+        "filePath": "/test1",
+        "icon": ""
+      },
+      {
+        "title": "",
+        "name": "test2",
+        "path": "/test2",
+        "filePath": "/test2",
+        "icon": ""
+      },
+      {
+        "title": "",
+        "name": "test3",
+        "path": "/test3",
+        "filePath": "/test3",
+        "icon": ""
+      }
+    ]
+  }
+]

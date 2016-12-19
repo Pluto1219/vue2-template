@@ -1,7 +1,12 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <hello></hello>
+    <p></p>
+    <router-link :to="{name: 'test1'}">test1</router-link>
+    <router-link :to="{name: 'test2'}">test2</router-link>
+    <router-link :to="{name: 'test3'}">test3</router-link>
+    <router-view></router-view>
+    <Hello></Hello>
   </div>
 </template>
 
@@ -9,7 +14,6 @@
   import Hello from './components/Hello'
 
   export default {
-    name: 'app',
     data() {
       return {
       	item: {
